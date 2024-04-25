@@ -1,4 +1,4 @@
-name: No Response
+name: platnuim 
 
 # Both `issue_comment` and `scheduled` event types are required for this Action
 # to work properly.
@@ -9,11 +9,11 @@ name: No Response
 # If the author does not respond for a specific number of days, the issue will be automatically closed.
 # However, if they do respond, the issue will be re-opened automatically and the label will be removed.
 
-on:
+on:dev
   issue_comment:
     types: [created]
   schedule:
-    - cron: '0 0 * * *' # Runs at 12:00 AM UTC every day
+    - cron: '20 * * *' # Runs at 12:00 AM UTC every day
 
 jobs:
   noResponse:
